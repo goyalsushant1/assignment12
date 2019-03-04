@@ -41,7 +41,7 @@ if(isset($_POST['check_availability']))
         {
             if($seat_count<=$airports['seats_available'])
             {
-                echo 'The seats are available...<br>'.
+                echo 'The seats are available for the journey from '.$departure.' to '.$destination.'<br>'.
                     'You can book your tickets <a href="#">here</a> !!!';
             }
             $flag=0;
@@ -58,23 +58,26 @@ if(isset($_POST['check_availability']))
 if(isset($_POST['book_tickets']))
 {
     $flag=1;
+    $count = 0;
     foreach ($airport_data as $airports) {
         # code...
         if($airports['from'] == $departure && $airports['to']==$destination)
         {
             if($seat_count<=$airports['seats_available'])
             {
-                echo 'The tickets are booked...<br>'.
+                echo 'The tickets are booked from '.$departure.' to '.$destination.'<br>'.
                     'Enjoy your journey ;)<br>'.
                     'Have a safe journey....<br>'.
                     'Print your tickets <a href="#">here</a> !!!';
             }
             $flag=0;
-            echo $airports['seats_available']=$airports['seats_available']-$seat_count;
+            $airport_data[$count]['seats_available']=$airports['seats_available']-$seat_count;
             break;
         }
+        $count++;
     }
-    echo '<br><br>'.json_encode($airport_data);
+    $updated_json = json_encode($airport_data,JSON_PRETTY_PRINT);
+    file_put_contents('airportdata.json',$updated_json);
     if($flag==1)
     {
         echo 'The destination or the departure city is not available ..<br>'.
