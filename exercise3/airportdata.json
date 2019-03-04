@@ -1,0 +1,51 @@
+[
+    {
+      "from": "Agra",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "to": "Kolkata",
+      "seats_available": "20"
+    },
+    {
+      "from": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "to": "Delhi",
+      "seats_available": "16"
+    },
+    {
+      "from": "Bangalore",
+      "state": "Karnataka",
+      "country": "India",
+      "to": " Kolkata",
+      "seats_available": "37"
+    },
+    {
+      "from": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "to": "New Delhi",
+      "seats_available": "86"
+    },
+    {
+      "from": "Kolkata",
+      "state": "West Bengal",
+      "country": "India",
+      "to": "Bangalore",
+      "seats_available": "42"
+    },
+    {
+      "from": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "to": "Mumbai",
+      "seats_available": "95"
+    },
+    {
+      "from": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "to": "Kolkata",
+      "seats_available": "34"
+    }
+]

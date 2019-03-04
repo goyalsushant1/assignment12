@@ -1,0 +1,46 @@
+.head{
+    width: 100%;
+    background-color: rgb(62, 98, 110);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    height: 50px;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+input,select{
+    display: block;
+    width : 100%;
+    font-size: 20px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #bbbbbb;
+}
+
+.main{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border : 2px solid #dddddd;
+}
+
+.box{
+    width: 400px;
+}
+
+.buttons {
+    width: 100%;    
+}
+
+.buttons .left input{
+    float : left;
+    width: 50%;
+    border: 2px solid #bbbbbb;
+}
+.buttons .right input{
+    float : right;
+    width:50%;
+    border: 2px solid #bbbbbb;
+}

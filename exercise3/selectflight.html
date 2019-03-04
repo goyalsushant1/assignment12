@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fly India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="selectFlight.css">
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="head">Flight Availability</div>
+            <form action="flight.php" method="post">
+                <select name="airlines" required>
+                    <option value="">--Select--</option>
+                    <option value="Air Vistara">Air Vistara</option>
+                    <option value="Air India">Air India</option>
+                    <option value="AirAsia">Air Asia</option>
+                    <option value="Go">Go Airlines</option>
+                    <option value="Indigo">IndiGo</option>
+                    <option value="Emirates">Emirates</option>
+                </select>
+                <input type="text" name="from" id="" placeholder=" From" autocomplete="off" required>
+                <input type="text" name="to" id="" placeholder=" To" autocomplete="off" required>
+                <input type="number" name="seat" id="" placeholder=" Seat Count" autocomplete="off" requirede>
+                <div class="buttons">
+                    <div class="left">
+                        <input type="submit" value="Check Availability" name="check_availability">
+                    </div>
+                    <div class="right">
+                        <input type="submit" value="Book Tickets" name="book_tickets">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
